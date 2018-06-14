@@ -1,0 +1,35 @@
+diff --git config.def.h config.def.h
+index 82b1b09..b99f4c8 100644
+--- config.def.h
++++ config.def.h
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "Inconsolata:pixelsize=15:antialias=true:autohint=true";
+ static int borderpx = 2;
+ 
+ /*
+@@ -161,7 +161,7 @@ static MouseShortcut mshortcuts[] = {
+ };
+ 
+ /* Internal keyboard shortcuts. */
+-#define MODKEY Mod1Mask
++#define MODKEY Mod4Mask
+ #define TERMMOD (ControlMask|ShiftMask)
+ 
+ static Shortcut shortcuts[] = {
+diff --git config.mk config.mk
+index 039c42c..5804f29 100644
+--- config.mk
++++ config.mk
+@@ -4,7 +4,7 @@ VERSION = 0.8.1
+ # Customize below to fit your system
+ 
+ # paths
+-PREFIX = /usr/local
++PREFIX = /usr
+ MANPREFIX = $(PREFIX)/share/man
+ 
+ X11INC = /usr/X11R6/include
